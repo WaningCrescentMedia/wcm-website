@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+    height: 100%;
+}
+
+body {
+    background:
+        linear-gradient(180deg, #000000, rgba(0, 0, 0, 0)) no-repeat fixed,
+        #061825;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.logo-container {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    padding: 0;
+}
+
+.logo-img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main-content {
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding: 0;
+    background: rgba(6, 24, 37, 0.25);
+    border: transparent;
+    border-radius: 25px;
+    box-shadow: 10px 10px 100px rgba(0, 0, 0, 0.25);
+}
+
+.main-head {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 5.5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-subhead {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-content-text {
+    font-size: 1.5em;
+    width: 75%;
+    margin: auto;
+}
