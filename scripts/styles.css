@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import url("https://fonts.cdnfonts.com/css/opendyslexic");
 
 html {
     height: 100%;
@@ -13,6 +14,46 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     margin: 0;
+}
+
+.font-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: rgba(22, 83, 126, 0.8);
+    color: #ffffff;
+    border: transparent;
+    border-radius: 12px;
+    margin: 0;
+    padding: 12px;
+    aspect-ratio: 1 / 1;
+    font-family: "OpenDyslexic", sans-serif;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.75s;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.font-toggle-btn:hover {
+    background: rgba(22, 83, 126, 1);
+}
+
+.font-toggle-btn.active {
+    background: rgba(50, 150, 200, 0.9);
+}
+
+.font-toggle-btn .toggle-text {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+/* OpenDyslexic mode, toggled by button at top right of page. */
+body.dyslexic-font,
+body.dyslexic-font * {
+    font-family: "OpenDyslexic", sans-serif !important;
 }
 
 .logo-container {
@@ -99,7 +140,7 @@ body {
 }
 
 .cc-img-container {
-    max-width: 6.5rem;
+    max-width: 7rem;
     margin: auto;
     padding: 0;
 }
@@ -112,6 +153,22 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+    .font-toggle-btn {
+        top: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .font-toggle-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .font-toggle-btn .toggle-text {
+        font-size: 0.75rem;
+    }
+
     .logo-container {
         display: block;
         width: 50%;
