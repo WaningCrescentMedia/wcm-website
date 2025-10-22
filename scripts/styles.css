@@ -152,21 +152,16 @@ body.dyslexic-font * {
     padding: 0;
 }
 
+/* Mobile scaling. */
 @media screen and (max-width: 800px) {
     .font-toggle-btn {
         top: 10px;
         right: 10px;
-        padding: 8px 12px;
-        font-size: 0.8rem;
-    }
-
-    .font-toggle-btn svg {
-        width: 18px;
-        height: 18px;
+        padding: 12px;
     }
 
     .font-toggle-btn .toggle-text {
-        font-size: 0.75rem;
+        font-size: 1.25rem;
     }
 
     .logo-container {
